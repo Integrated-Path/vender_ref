@@ -3,22 +3,16 @@
   <data>
 
 
-    <record id="expensess_form" model="ir.ui.view">
-      <field name="name">expensess.form</field>
-      <field name="model">expensess.model</field>
+    <record id="purchase_order_form" model="ir.ui.view">
+      <field name="name">purchase_order.form</field>
+      <field name="model">purchase.order</field>
+      <field name="inherit_id" ref="purchase.purchase_order_form" />
       <field name="arch" type="xml">
-        <form>
-          <field name="employee_name" />
-          <field name="new_expensses" />
-          <field name="month" />
-        </form>
+        
+        <xpath expr="//field[@name='partner_ref']" position="after">
+					<field name="partner_ref" />
+				</xpath>
       </field>
-    </record>
-    <record id="open_view_accrual_plans" model="ir.actions.act_window">
-      <field name="name">Accrual Plans</field>
-      <field name="type">ir.actions.act_window</field>
-      <field name="res_model">expensess.model</field>
-      <field name="view_mode">form,form</field>
     </record>
 
   </data>

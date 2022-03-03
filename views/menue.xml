@@ -1,6 +1,0 @@
-<odoo>
-  
-  <menuitem id="expensess_root_menu" name="Expensess" />
-  <menuitem id="sub_menu" name="Summary" action="open_view_accrual_plans" parent="expensess_root_menu" />
-
-</odoo>
