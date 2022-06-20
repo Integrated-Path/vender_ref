@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Alsaree3 Vender Ref",
+    'name': "Vender Ref",
 
 
     'summary': """
